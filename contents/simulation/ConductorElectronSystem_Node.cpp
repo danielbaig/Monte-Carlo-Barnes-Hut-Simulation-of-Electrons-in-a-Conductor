@@ -373,7 +373,7 @@ void ConductorElectronSystem::savePositions() const
         Saves the positions of the electrons.
         */
         std::ofstream myfile;
-        myfile.open("positions.txt");
+        myfile.open("../data/positions.txt");
         for (unsigned int i{ 0 }; i < m_numElectrons; ++i)
         {
             myfile << m_particles[i]->m_x << ','
@@ -396,7 +396,7 @@ void ConductorElectronSystem::saveEnergyHistory(std::vector<double> energyHistor
         */
 
         std::ofstream myfile;
-        myfile.open("energyHistory.txt");
+        myfile.open("../data/energyHistory.txt");
         for (const auto& i : energyHistory)
         {
             myfile << i << ',';

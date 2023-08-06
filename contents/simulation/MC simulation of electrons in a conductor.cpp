@@ -24,7 +24,7 @@ int main()
 
     constexpr int numElectrons{ 1000 };
     constexpr double temperature{ 300 }; // [K]
-    constexpr unsigned int Nsteps{ static_cast<unsigned int>(1e+5) };
+    constexpr unsigned int Nsteps{ static_cast<unsigned int>(1e+3) };
 
 
 
