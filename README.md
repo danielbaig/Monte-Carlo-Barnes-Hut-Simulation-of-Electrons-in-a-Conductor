@@ -1,0 +1,2 @@
+# Monte-Carlo-Barnes-Hut-Simulation-of-Electrons-in-a-Conductor
+This project was undertaken in the summer of 2022. It consisted of an implementation of the Barnes-Hut approximation combined with Monte Carlo methods to find the equilibrium distribution of electrons in a two-dimensional conducting plate (easily extendable to any shaped plate of any size) in the presence of external charges. C++ was used to perform the computation and Python was used to visualise the distribution and analyse the data.
