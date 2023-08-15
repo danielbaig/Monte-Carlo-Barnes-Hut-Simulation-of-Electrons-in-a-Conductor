@@ -3,6 +3,9 @@
 
 class Random
 {
+    /*
+    Class for concise random number use.
+    */
 public:
     static double uniform();
 

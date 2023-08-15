@@ -6,6 +6,9 @@
 
 class Timer
 {
+	/*
+	Class for timing functions and code fragments.
+	*/
 private:
 	// Type aliases to make accessing nested type easier
 	using clock_type = std::chrono::steady_clock;

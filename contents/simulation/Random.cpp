@@ -9,6 +9,9 @@ double Random::uniform()
 {
     /*
     Generate a random number between 0 and 1.
+
+    Outputs:
+        - double m_uniform: Uniform random number.
     */
     static std::mt19937 mt{ static_cast<std::mt19937::result_type>
     (std::time(nullptr)) };
@@ -21,6 +24,9 @@ double Random::randn()
     /*
     Generate a random number based on a standard normal
     distribution.
+
+    Outputs:
+        - double m_randn: Normal random number.
     */
     static std::mt19937 mt{ static_cast<std::mt19937::result_type>
     (std::time(nullptr)) };
@@ -30,6 +36,17 @@ double Random::randn()
 
 int Random::intUniform(int lower, int upper)
 {
+    /*
+    Generate a random integer in a range.
+
+    Inputs:
+        - int lower: Lower bound.
+        - int upper: Upper bound.
+
+    Outputs:
+        - int value: Random integer.
+    
+    */
     static std::mt19937 mt{ static_cast<std::mt19937::result_type>
     (std::time(nullptr)) };
 
@@ -38,6 +55,7 @@ int Random::intUniform(int lower, int upper)
         std::cout << "lower >= upper in intUniform\n";
         std::cout << "Lower: " << lower << "\nUpper: " 
             << upper << '\n';
+        return -1;
     }
     std::uniform_int_distribution<int> value{ lower, upper-1 };
     return value(mt);
